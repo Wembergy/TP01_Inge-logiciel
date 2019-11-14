@@ -1,0 +1,41 @@
+<!-- récup Maven -->
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<!-- version de la grammaire utilisé par maven -->
+  <modelVersion>4.0.0</modelVersion>
+
+<!-- informations primaire pour maven -->
+  <groupId>fr.wembergy.miage.m1</groupId>
+  <artifactId>monHelloWorld</artifactId>
+  <!-- la version ne correspond pas à grand chose, c'est obligatoire pour autant pour Maven -->
+  <version>0.0.1-SNAPSHOT</version>
+  <!-- En sachant que le package sera un .jar, Maven connait le langage de programmation utilisé -->
+  <packaging>jar</packaging>
+
+<!-- informations primaire du projet pour Maven -->
+  <name>monHelloWorld</name>
+  <url>http://maven.apache.org</url>
+
+<!-- propriétés -->
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <maven.compiler.release>11</maven.compiler.release>   
+    <maven.compiler.source>11</maven.compiler.source>
+    <maven.compiler.target>11</maven.compiler.target>
+  </properties>
+
+<!-- dépendance utilisées par Maven -->
+  <dependencies>
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>3.8.1</version>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+    	<groupId>log4j</groupId>
+    	<artifactId>log4j</artifactId>
+    	<version>1.2.16</version>
+    </dependency>
+  </dependencies>
+</project>
